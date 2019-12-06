@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Charactor.tscn" type="PackedScene" id=1]
+[ext_resource path="res://npc.gd" type="Script" id=2]
+
+[node name="Npc" index="0" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Timer" type="Timer" parent="." index="5"]
+one_shot = true
+
